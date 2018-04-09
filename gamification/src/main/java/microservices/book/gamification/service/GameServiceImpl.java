@@ -1,6 +1,7 @@
 package microservices.book.gamification.service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -91,9 +92,18 @@ class GameServiceImpl implements GameService {
 
 	@Override
 	public GameStats retrieveStatsForUser(final Long userId) {
-		int score = scoreCardRepository.getTotalScoreForUser(userId);
+		Integer score = scoreCardRepository.getTotalScoreForUser(userId);
+		// If the user does not exist yet, it means it has 0 score
+		if (score == null) {
+			return new GameStats(userId, 0, Collections.emptyList());
+		}
 		List<BadgeCard> badgeCards = badgeCardRepository.findByUserIdOrderByBadgeTimestampDesc(userId);
 		return new GameStats(userId, score, badgeCards.stream().map(BadgeCard::getBadge).collect(Collectors.toList()));
+	}
+
+	@Override
+	public ScoreCard getScoreForAttempt(final Long attemptId) {
+		return scoreCardRepository.findByAttemptId(attemptId);
 	}
 
 	/**

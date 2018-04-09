@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="35" failures="10" name="microservices.book.MultiplicationFeatureTest" time="0.04" errors="0" skipped="8">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Git Sync\FKSOFT2\e2e-tests"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Git Sync\FKSOFT2\e2e-tests"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\FRANKL~1.AZE\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Git Sync\FKSOFT2\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf780867830727835363.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\DEV\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\PROJECT\mongodb\bin;C:\Python34;C:\Python34\Scripts;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\PuTTY\;C:\Users\franklin.azeredo\AppData\Roaming\npm;C:\Users\franklin.azeredo\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Heroku\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\franklin.azeredo"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="franklin.azeredo"/>
+    <property name="java.class.path" value="C:\DEV\sts-bundle\sts-3.9.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_111\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Git Sync\FKSOFT2\e2e-tests\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Scenario: The user sends a first right attempt and gets a badge" name="When the user john_snow sends 1 right attempts" time="0"/>
+  <testcase classname="Scenario: The user sends a first right attempt and gets a badge" name="Then the user gets a response indicating the attempt is right" time="0"/>
+  <testcase classname="Scenario: The user sends a first right attempt and gets a badge" name="And the user gets 10 points for the attempt" time="0">
+    <failure message="expected:&lt;[1]0&gt; but was:&lt;[]0&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:14)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: The user sends a first right attempt and gets a badge" name="Scenario: The user sends a first right attempt and gets a badge" time="0">
+    <failure message="expected:&lt;[1]0&gt; but was:&lt;[]0&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:14)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: The user sends a first right attempt and gets a badge" name="And the user gets the FIRST_WON badge" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: The user sends a second right attempt and gets points only" name="Given the user john_snow sends 1 right attempts" time="0"/>
+  <testcase classname="Scenario: The user sends a second right attempt and gets points only" name="And the user gets the FIRST_WON badge" time="0.005">
+    <failure message="
+Expecting:
+ &lt;[]&gt;
+to contain:
+ &lt;[&quot;FIRST_WON&quot;]&gt;
+but could not find:
+ &lt;[&quot;FIRST_WON&quot;]&gt;
+" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting:
+ &lt;[]&gt;
+to contain:
+ &lt;[&quot;FIRST_WON&quot;]&gt;
+but could not find:
+ &lt;[&quot;FIRST_WON&quot;]&gt;
+
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_the_type_badge(MultiplicationFeatureSteps.java:65)
+	at ✽.And the user gets the FIRST_WON badge(src/test/resources/multiplication.feature:19)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: The user sends a second right attempt and gets points only" name="Scenario: The user sends a second right attempt and gets points only" time="0.006">
+    <failure message="
+Expecting:
+ &lt;[]&gt;
+to contain:
+ &lt;[&quot;FIRST_WON&quot;]&gt;
+but could not find:
+ &lt;[&quot;FIRST_WON&quot;]&gt;
+" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting:
+ &lt;[]&gt;
+to contain:
+ &lt;[&quot;FIRST_WON&quot;]&gt;
+but could not find:
+ &lt;[&quot;FIRST_WON&quot;]&gt;
+
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_the_type_badge(MultiplicationFeatureSteps.java:65)
+	at ✽.And the user gets the FIRST_WON badge(src/test/resources/multiplication.feature:19)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: The user sends a second right attempt and gets points only" name="When the user john_snow sends 1 right attempts" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: The user sends a second right attempt and gets points only" name="Then the user gets a response indicating the attempt is right" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: The user sends a second right attempt and gets points only" name="And the user gets 10 points for the attempt" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: The user sends a second right attempt and gets points only" name="And the user does not get any badge" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: The user sends a wrong attempt and gets nothing" name="When the user john_snow sends 1 wrong attempts" time="0"/>
+  <testcase classname="Scenario: The user sends a wrong attempt and gets nothing" name="Then the user gets a response indicating the attempt is wrong" time="0"/>
+  <testcase classname="Scenario: The user sends a wrong attempt and gets nothing" name="And the user gets 0 points for the attempt" time="0"/>
+  <testcase classname="Scenario: The user sends a wrong attempt and gets nothing" name="And the user does not get any badge" time="0"/>
+  <testcase classname="Scenario: The user sends a wrong attempt and gets nothing" name="Scenario: The user sends a wrong attempt and gets nothing" time="0"/>
+  <testcase classname="| 9 | BRONZE_MULTIPLICATOR |" name="Given the user john_snow sends 9 right attempts" time="0"/>
+  <testcase classname="| 9 | BRONZE_MULTIPLICATOR |" name="When the user john_snow sends 1 right attempts" time="0"/>
+  <testcase classname="| 9 | BRONZE_MULTIPLICATOR |" name="Then the user gets a response indicating the attempt is right" time="0"/>
+  <testcase classname="| 9 | BRONZE_MULTIPLICATOR |" name="And the user gets 10 points for the attempt" time="0">
+    <failure message="expected:&lt;[1]0&gt; but was:&lt;[]0&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+</failure>
+  </testcase>
+  <testcase classname="| 9 | BRONZE_MULTIPLICATOR |" name="| 9 | BRONZE_MULTIPLICATOR |" time="0">
+    <failure message="expected:&lt;[1]0&gt; but was:&lt;[]0&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+</failure>
+  </testcase>
+  <testcase classname="| 9 | BRONZE_MULTIPLICATOR |" name="And the user gets the BRONZE_MULTIPLICATOR badge" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 49 | SILVER_MULTIPLICATOR |" name="Given the user john_snow sends 49 right attempts" time="0"/>
+  <testcase classname="| 49 | SILVER_MULTIPLICATOR |" name="When the user john_snow sends 1 right attempts" time="0"/>
+  <testcase classname="| 49 | SILVER_MULTIPLICATOR |" name="Then the user gets a response indicating the attempt is right" time="0"/>
+  <testcase classname="| 49 | SILVER_MULTIPLICATOR |" name="And the user gets 10 points for the attempt" time="0.001">
+    <failure message="expected:&lt;[1]0&gt; but was:&lt;[]0&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+</failure>
+  </testcase>
+  <testcase classname="| 49 | SILVER_MULTIPLICATOR |" name="| 49 | SILVER_MULTIPLICATOR |" time="0.001">
+    <failure message="expected:&lt;[1]0&gt; but was:&lt;[]0&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+</failure>
+  </testcase>
+  <testcase classname="| 49 | SILVER_MULTIPLICATOR |" name="And the user gets the SILVER_MULTIPLICATOR badge" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 99 | GOLD_MULTIPLICATOR |" name="Given the user john_snow sends 99 right attempts" time="0"/>
+  <testcase classname="| 99 | GOLD_MULTIPLICATOR |" name="When the user john_snow sends 1 right attempts" time="0"/>
+  <testcase classname="| 99 | GOLD_MULTIPLICATOR |" name="Then the user gets a response indicating the attempt is right" time="0"/>
+  <testcase classname="| 99 | GOLD_MULTIPLICATOR |" name="And the user gets 10 points for the attempt" time="0">
+    <failure message="expected:&lt;[1]0&gt; but was:&lt;[]0&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+</failure>
+  </testcase>
+  <testcase classname="| 99 | GOLD_MULTIPLICATOR |" name="| 99 | GOLD_MULTIPLICATOR |" time="0">
+    <failure message="expected:&lt;[1]0&gt; but was:&lt;[]0&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+</failure>
+  </testcase>
+  <testcase classname="| 99 | GOLD_MULTIPLICATOR |" name="And the user gets the GOLD_MULTIPLICATOR badge" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

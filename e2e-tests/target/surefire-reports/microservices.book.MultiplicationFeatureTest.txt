@@ -1,0 +1,92 @@
+-------------------------------------------------------------------------------
+Test set: microservices.book.MultiplicationFeatureTest
+-------------------------------------------------------------------------------
+Tests run: 35, Failures: 10, Errors: 0, Skipped: 8, Time elapsed: 17.43 sec <<< FAILURE!
+And the user gets 10 points for the attempt(Scenario: The user sends a first right attempt and gets a badge)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ?.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:14)
+
+Scenario: The user sends a first right attempt and gets a badge  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ?.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:14)
+
+And the user gets the FIRST_WON badge(Scenario: The user sends a second right attempt and gets points only)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting:
+ <[]>
+to contain:
+ <["FIRST_WON"]>
+but could not find:
+ <["FIRST_WON"]>
+
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_the_type_badge(MultiplicationFeatureSteps.java:65)
+	at ?.And the user gets the FIRST_WON badge(src/test/resources/multiplication.feature:19)
+
+Scenario: The user sends a second right attempt and gets points only  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting:
+ <[]>
+to contain:
+ <["FIRST_WON"]>
+but could not find:
+ <["FIRST_WON"]>
+
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_the_type_badge(MultiplicationFeatureSteps.java:65)
+	at ?.And the user gets the FIRST_WON badge(src/test/resources/multiplication.feature:19)
+
+And the user gets 10 points for the attempt(| 9 | BRONZE_MULTIPLICATOR |)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ?.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+
+| 9 | BRONZE_MULTIPLICATOR |  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ?.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+
+And the user gets 10 points for the attempt(| 49 | SILVER_MULTIPLICATOR |)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ?.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+
+| 49 | SILVER_MULTIPLICATOR |  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ?.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+
+And the user gets 10 points for the attempt(| 99 | GOLD_MULTIPLICATOR |)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ?.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+
+| 99 | GOLD_MULTIPLICATOR |  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ?.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+

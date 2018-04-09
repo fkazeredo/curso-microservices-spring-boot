@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="5" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="17.248583">
+<testcase classname="Users are able to send their multiplication" name="The user sends a first right attempt and gets a badge" time="2.236072">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)&#13;&#10;&#9;at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:14)&#13;&#10;"><![CDATA[When the user john_snow sends 1 right attempts..............................passed
+Then the user gets a response indicating the attempt is right...............passed
+And the user gets 10 points for the attempt.................................failed
+And the user gets the FIRST_WON badge.......................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="Users are able to send their multiplication" name="The user sends a second right attempt and gets points only" time="0.384411">
+<failure message="java.lang.AssertionError: &#13;&#10;Expecting:&#13;&#10; &lt;[]&gt;&#13;&#10;to contain:&#13;&#10; &lt;[&quot;FIRST_WON&quot;]&gt;&#13;&#10;but could not find:&#13;&#10; &lt;[&quot;FIRST_WON&quot;]&gt;&#13;&#10;&#13;&#10;&#9;at microservices.book.MultiplicationFeatureSteps.the_user_gets_the_type_badge(MultiplicationFeatureSteps.java:65)&#13;&#10;&#9;at ✽.And the user gets the FIRST_WON badge(src/test/resources/multiplication.feature:19)&#13;&#10;"><![CDATA[Given the user john_snow sends 1 right attempts.............................passed
+And the user gets the FIRST_WON badge.......................................failed
+When the user john_snow sends 1 right attempts..............................skipped
+Then the user gets a response indicating the attempt is right...............skipped
+And the user gets 10 points for the attempt.................................skipped
+And the user does not get any badge.........................................skipped
+
+StackTrace:
+java.lang.AssertionError: 
+Expecting:
+ <[]>
+to contain:
+ <["FIRST_WON"]>
+but could not find:
+ <["FIRST_WON"]>
+
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_the_type_badge(MultiplicationFeatureSteps.java:65)
+	at ✽.And the user gets the FIRST_WON badge(src/test/resources/multiplication.feature:19)
+]]></failure>
+</testcase>
+<testcase classname="Users are able to send their multiplication" name="The user sends a wrong attempt and gets nothing" time="2.170905">
+<system-out><![CDATA[When the user john_snow sends 1 wrong attempts..............................passed
+Then the user gets a response indicating the attempt is wrong...............passed
+And the user gets 0 points for the attempt..................................passed
+And the user does not get any badge.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Users are able to send their multiplication" name="The user sends a right attempt after 9 right attempts and then gets a badge BRONZE_MULTIPLICATOR" time="2.558593">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)&#13;&#10;&#9;at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)&#13;&#10;"><![CDATA[Given the user john_snow sends 9 right attempts.............................passed
+When the user john_snow sends 1 right attempts..............................passed
+Then the user gets a response indicating the attempt is right...............passed
+And the user gets 10 points for the attempt.................................failed
+And the user gets the BRONZE_MULTIPLICATOR badge............................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+]]></failure>
+</testcase>
+<testcase classname="Users are able to send their multiplication" name="The user sends a right attempt after 49 right attempts and then gets a badge SILVER_MULTIPLICATOR" time="4.187717">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)&#13;&#10;&#9;at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)&#13;&#10;"><![CDATA[Given the user john_snow sends 49 right attempts............................passed
+When the user john_snow sends 1 right attempts..............................passed
+Then the user gets a response indicating the attempt is right...............passed
+And the user gets 10 points for the attempt.................................failed
+And the user gets the SILVER_MULTIPLICATOR badge............................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+]]></failure>
+</testcase>
+<testcase classname="Users are able to send their multiplication" name="The user sends a right attempt after 99 right attempts and then gets a badge GOLD_MULTIPLICATOR" time="5.710885">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[1]0&gt; but was:&lt;[]0&gt;&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)&#13;&#10;&#9;at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)&#13;&#10;"><![CDATA[Given the user john_snow sends 99 right attempts............................passed
+When the user john_snow sends 1 right attempts..............................passed
+Then the user gets a response indicating the attempt is right...............passed
+And the user gets 10 points for the attempt.................................failed
+And the user gets the GOLD_MULTIPLICATOR badge..............................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[1]0> but was:<[]0>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at microservices.book.MultiplicationFeatureSteps.the_user_gets_points_for_the_attempt(MultiplicationFeatureSteps.java:56)
+	at ✽.And the user gets 10 points for the attempt(src/test/resources/multiplication.feature:36)
+]]></failure>
+</testcase>
+</testsuite>

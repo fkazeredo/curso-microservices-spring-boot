@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>microservices.book</groupId>
-	<artifactId>social-multiplication</artifactId>
+	<artifactId>user-interface</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>social-multiplication</name>
-	<description>Social multiplication app</description>
+	<name>user-interface</name>
+	<description>User interface app</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
